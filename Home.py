@@ -103,7 +103,7 @@ def display_video_list(video_data, start_index, end_index, search_query=None):
 #                                       MAIN PAGE CONFIGURATION
 ########################################################################################################################
 
-st.set_page_config(page_title="Youtube Channel Analytics Dashboard",
+st.set_page_config(page_title="Physics Wallah Youtube Channel Analytics Dashboard",
                    page_icon="📊",
                    layout="wide")
 
@@ -111,7 +111,7 @@ st.set_page_config(page_title="Youtube Channel Analytics Dashboard",
 #                                       SIDE BAR CONFIGURATION
 ########################################################################################################################
 
-st.title("YouTube Analytics Dashboard")
+st.title("Physics Wallah YouTube Analytics Dashboard")
 st.sidebar.title("Settings")
 
 # Pre-fill the API key and store it in session_state so that it isn’t re-entered each time.
