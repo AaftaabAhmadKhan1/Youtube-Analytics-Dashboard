@@ -22,7 +22,7 @@ from channelVideoDataExtraction import getVideoList, buildVideoListDataframe
 #                                               HELPER FUNCTIONS
 ########################################################################################################################
 
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False,ttl=1)
 def get_channel_id(api_key, channel_name):
     """
     Convert a YouTube channel name to a channel ID using the YouTube Data API.
@@ -34,7 +34,7 @@ def get_channel_id(api_key, channel_name):
         return data['items'][0]['id']['channelId']
     return None
 
-@st.cache_data(show_spinner=True)
+@st.cache_data(show_spinner=True,ttl=1)
 def download_data(api_key, channel_id):
     """
     Downloads channel and video data.
